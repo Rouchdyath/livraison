@@ -1,0 +1,653 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>BLEOUM Service - Livraison Rapide </title>
+
+  <link rel="stylesheet" type="text/css" href="css/vendor.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Jost&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <script type="module" src="js/ionicons.esm.js"></script>
+  <script nomodule="" src="js/ionicons.js"></script>
+
+  <!-- script ================================================== -->
+  <script src="js/modernizr.js"></script>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-example2" tabindex="0">
+
+  <!-- Navigation Section Starts -->
+  <section id="navigation-bar" class="navigation position-fixed">
+
+    <nav id="navbar-example2" class="navbar navbar-expand-lg ">
+
+      <div class="navigation container-fluid d-flex flex-wrap align-items-center my-2 pe-4 ps-5 ">
+
+        <div class="col-md-3 brand-logo">
+          <a href="index.html" class="d-inline-flex link-body-emphasis text-decoration-none">
+            <img src="images/logo.png" alt="Bleoum Service" style="height: 110px; width: auto;">
+          </a>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation"><ion-icon name="menu-outline"></ion-icon></button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+
+          <div class="offcanvas-body">
+            <ul class="navbar-nav align-items-center flex-grow-1">
+              <li class="nav-list mx-3">
+                <a href="index.html" class="nav-link active px-2">
+                  <h5> Acceuil </h5>
+                </a>
+              </li>
+              <li class="nav-list mx-3">
+                <a href="#resources" class="nav-link px-2">
+                  <h5> A propos </h5>
+                </a>
+              </li>
+              <li class="nav-list mx-3">
+                <a href="#services" class="nav-link px-2">
+                  <h5> Nos Services </h5>
+                </a>
+              </li>
+              <li class="nav-list mx-3">
+                <a href="#articles" class="nav-link px-2">
+                  <h5> Blog </h5>
+                </a>
+              </li>
+              <li class="nav-list mx-3">
+                <a href="#contact" class="nav-link px-2">
+                  <h5> Contact </h5>
+                </a>
+              </li>
+               
+            <!--<div class="account d-flex align-items-center mt-5 mt-lg-0 justify-content-center justify-content-lg-end">
+              <a href="#" class="nav-link me-5 login" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <h5>Login</h5>
+              </a>
+               Modal
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                   <div class="modal-body">
+                      <div class="tabs-listing">
+                        <nav>
+                          <div class="nav nav-tabs d-flex justify-content-center border-0" id="nav-tab" role="tablist">
+                            <button class="btn btn-outline-primary text-uppercase px-4 py-2 me-4 active" id="nav-sign-in-tab" data-bs-toggle="tab" data-bs-target="#nav-sign-in" type="button" role="tab" aria-controls="nav-sign-in" aria-selected="true">Log
+                              In</button>
+                            <button class="btn btn-outline-primary text-uppercase px-4 py-2" id="nav-register-tab" data-bs-toggle="tab" data-bs-target="#nav-register" type="button" role="tab" aria-controls="nav-register" aria-selected="false">Sign
+                              Up</button>
+                          </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                          <div class="tab-pane fade active show" id="nav-sign-in" role="tabpanel" aria-labelledby="nav-sign-in-tab">
+                            <form id="form1" class="form-group flex-wrap p-3 ">
+                              <div class="form-input col-lg-12 my-4">
+                                <label for="exampleInputEmail1" class="form-label fs-6 text-uppercase fw-bold text-black">Email
+                                  Address</label>
+                                <input type="text" id="exampleInputEmail1" name="email" placeholder="Email" class="form-control ps-3">
+                              </div>
+                              <div class="form-input col-lg-12 my-4">
+                                <label for="inputPassword1" class="form-label  fs-6 text-uppercase fw-bold text-black">Password</label>
+                                <input type="password" id="inputPassword1" placeholder="Password" class="form-control ps-3" aria-describedby="passwordHelpBlock">
+                                <div id="passwordHelpBlock" class="form-text text-center">
+                                  <a href="#" class=" password">Forgot Password ?</a>
+                                </div>
+
+                              </div>
+                              <label class="py-3">
+                                <input type="checkbox" required="" class="d-inline">
+                                <span class="label-body text-black">Remember Me</span>
+                              </label>
+                              <div class="d-grid my-3">
+                                <button class="btn btn-primary btn-lg btn-dark text-uppercase btn-rounded-none fs-6">Log
+                                  In</button>
+                              </div>
+                            </form>
+                          </div>
+                          <div class="tab-pane fade" id="nav-register" role="tabpanel" aria-labelledby="nav-register-tab">
+                            <form id="form2" class="form-group flex-wrap p-3 ">
+                              <div class="form-input col-lg-12 my-4">
+                                <label for="exampleInputEmail2" class="form-label fs-6 text-uppercase fw-bold text-black">Email
+                                  Address</label>
+                                <input type="text" id="exampleInputEmail2" name="email" placeholder="Email" class="form-control ps-3">
+                              </div>
+                              <div class="form-input col-lg-12 my-4">
+                                <label for="inputPassword2" class="form-label  fs-6 text-uppercase fw-bold text-black">Password</label>
+                                <input type="password" id="inputPassword2" placeholder="Password" class="form-control ps-3" aria-describedby="passwordHelpBlock">
+                              </div>
+                              <label class="py-3">
+                                <input type="checkbox" required="" class="d-inline">
+                                <span class="label-body text-black">I agree to the <a href="#" class="text-black password border-bottom">Privacy
+                                    Policy</a>
+                                </span>
+                              </label>
+                              <div class="d-grid my-3">
+                                <button class="btn btn-primary btn-lg btn-dark text-uppercase btn-rounded-none fs-6">Sign
+                                  Up</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="btn btn-primary first-button signup px-4 py-3" data-bs-toggle="modal" data-bs-target="#exampleModal2">Sign up</button>
+               Modal 
+              <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="tabs-listing">
+                        <nav>
+                          <div class="nav nav-tabs d-flex justify-content-center border-0" id="nav-tab2" role="tablist">
+                            <button class="btn btn-outline-primary text-uppercase px-4 py-2 me-4 " id="nav-sign-in-tab2" data-bs-toggle="tab" data-bs-target="#nav-sign-in2" type="button" role="tab" aria-controls="nav-sign-in2" aria-selected="false">Log
+                              In</button>
+                            <button class="btn btn-outline-primary text-uppercase px-4 py-2 active" id="nav-register-tab2" data-bs-toggle="tab" data-bs-target="#nav-register2" type="button" role="tab" aria-controls="nav-register2" aria-selected="true">Sign
+                              Up</button>
+                          </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent1">
+                          <div class="tab-pane fade " id="nav-sign-in2" role="tabpanel" aria-labelledby="nav-sign-in-tab2">
+                            <form id="form3" class="form-group flex-wrap p-3 ">
+                              <div class="form-input col-lg-12 my-4">
+                                <label for="exampleInputEmail3" class="form-label fs-6 text-uppercase fw-bold text-black">Email
+                                  Address</label>
+                                <input type="text" id="exampleInputEmail3" name="email" placeholder="Email" class="form-control ps-3">
+                              </div>
+                              <div class="form-input col-lg-12 my-4">
+                                <label for="inputPassword3" class="form-label  fs-6 text-uppercase fw-bold text-black">Password</label>
+                                <input type="password" id="inputPassword3" placeholder="Password" class="form-control ps-3" aria-describedby="passwordHelpBlock">
+                                <div id="passwordHelpBlock2" class="form-text text-center">
+                                  <a href="#" class=" password">Forgot Password ?</a>
+                                </div>
+
+                              </div>
+                              <label class="py-3">
+                                <input type="checkbox" required="" class="d-inline">
+                                <span class="label-body text-black">Remember Me</span>
+                              </label>
+                              <div class="d-grid my-3">
+                                <button class="btn btn-primary btn-lg btn-dark text-uppercase btn-rounded-none fs-6">Log
+                                  In</button>
+                              </div>
+                            </form>
+                          </div>
+                          <div class="tab-pane fade active show" id="nav-register2" role="tabpanel" aria-labelledby="nav-register-tab2">
+                            <form id="form4" class="form-group flex-wrap p-3 ">
+                              <div class="form-input col-lg-12 my-4">
+                                <label for="exampleInputEmail4" class="form-label fs-6 text-uppercase fw-bold text-black">Email
+                                  Address</label>
+                                <input type="text" id="exampleInputEmail4" name="email" placeholder="Email" class="form-control ps-3">
+                              </div>
+                              <div class="form-input col-lg-12 my-4">
+                                <label for="inputPassword4" class="form-label  fs-6 text-uppercase fw-bold text-black">Password</label>
+                                <input type="password" id="inputPassword4" placeholder="Password" class="form-control ps-3" aria-describedby="passwordHelpBlock">
+                              </div>
+                              <label class="py-3">
+                                <input type="checkbox" required="" class="d-inline">
+                                <span class="label-body text-black">I agree to the <a href="#" class="text-black password border-bottom">Privacy
+                                    Policy</a>
+                                </span>
+                              </label>
+                              <div class="d-grid my-3">
+                                <button class="btn btn-primary btn-lg btn-dark text-uppercase btn-rounded-none fs-6">Sign
+                                  Up</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>-->
+          </div>
+        </div>
+
+      </div>
+
+    </nav>
+
+  </section>
+
+  <!-- Hero Section Starts -->
+  <section id="hero">
+    <div class="hero container py-5 my-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 mt-2 py-5">
+        <div class="col-10 col-sm-8 col-lg-6 py-md-5 my-md-5">
+          <img src="images/Bléoum.png " class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          <!--<img src="images/Bléoum 2 (1).png " class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">-->
+        </div>
+        <div class="col-lg-6 py-md-5 my-md-5">
+          <h1 class=" lh-1 mb-3">La livraison rapide et fiable, partout au Bénin.</h1>
+          <h5>Confiez-nous vos colis, vos courses et vos documents. Nous nous occupons du reste, avec rapidité et sérieux.</h5>
+          <ul class="list-unstyled my-5">
+            <li class="my-2">
+              <h5>1   Réservation en quelques clics</h5>
+            </li>
+            <li class="my-2">
+              <h5>2   Couverture à Cotonou et environs </h5>
+            </li>
+            <li class="my-2">
+              <h5>3   Support client disponible 7j/7</h5>
+            </li>
+          </ul>
+          <div class="">
+            <a href="#" class="icon-link">
+              <h5> Commencez maintenant</h5>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature Section Starts -->
+  <section id="features">
+    <div id="resources" class="container py-5 my-5">
+
+      <div class="row row-cols-1 row-cols-md-2 align-items-md-center gx-5 py-5">
+        <div class="col-md-7 d-flex flex-column align-items-start">
+          <h1 class="">Votre partenaire logistique de confiance</h1>
+          <p class="feature-paragraph my-5">Chez Bleoum Service, nous croyons que chaque colis mérite d'arriver à destination dans 
+            les meilleures conditions, dans les délais annoncés. Que vous soyez un particulier, un commerçant en ligne ou une entreprise,
+            notre équipe met tout en œuvre pour simplifier vos livraisons du premier au dernier kilomètre.
+            Nous combinons rapidité, transparence et un service client à l'écoute pour vous offrir une expérience de livraison sans stress. 
+            Parce que votre satisfaction est notre priorité,nous suivons chaque envoi avec la même rigueur, qu'il s'agisse d'un simple 
+            document ou d'une commande volumineuse.
+        
+          </p>
+          <a href="#about" class="btn btn-outline-primary second-button">En savoir Plus </a>
+        </div>
+
+        <div class="col-md-5">
+          <div class="row flex-column g-4 mt-3">
+            <div class="feature-post py-2 px-5">
+              <h4 class="py-3">Réservation facile</h4>
+              <p>Créez votre demande de livraison en quelques minutes, où que vous soyez.</p>
+            </div>
+
+            <div class="feature-post py-2 px-5">
+              <h4 class="py-3">Couverture locale</h4>
+              <p>Nous livrons rapidement à Cotonou et dans les zones environnantes, avec des coursiers qui connaissent le terrain.</p>
+            </div>
+
+            <div class="feature-post py-2 px-5">
+              <h4 class="py-3">Support réactif</h4>
+              <p>Une question, un imprévu ? Notre équipe vous répond rapidement, sans vous laisser dans l'incertitude.</p>
+          
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section Starts -->
+  <div class="row g-4">
+    
+    <div class="col-md-3 d-flex">
+        <div class="service-post p-5 text-center h-100 w-100">
+            <div class="feature-icon mb-3">
+                <img src="images/van.png" class="img-fluid" style="width:70px;" alt="">
+            </div>
+            <h3 class="h5">Transport rapide</h3>
+            <p>Besoin d'un colis livré en urgence ? Nos coursiers assurent un transport rapide et sécurisé, même pour les délais les plus serrés.</p>
+        </div>
+    </div>
+
+    <div class="col-md-3 d-flex">
+        <div class="service-post p-5 text-center h-100 w-100">
+            <div class="feature-icon mb-3">
+                <img src="images/ship.png" class="img-fluid" style="width:70px;" alt="">
+            </div>
+            <h3 class="h5">Livraison de courses et achats</h3>
+            <p>Gagnez du temps : nous récupérons et livrons vos courses, achats en ligne ou commandes de restaurant directement chez vous ou à votre bureau.</p>
+        </div>
+    </div>
+
+    <div class="col-md-3 d-flex">
+        <div class="service-post p-5 text-center h-100 w-100">
+            <div class="feature-icon mb-3">
+                <img src="images/headphone.png" class="img-fluid" style="width:70px;" alt="">
+            </div>
+            <h3 class="h5">Services aux entreprises</h3>
+            <p>Vous gérez plusieurs livraisons par semaine ? Bénéficiez de tarifs adaptés et d'un interlocuteur dédié.</p>
+        </div>
+    </div>
+
+    <div class="col-md-3 d-flex">
+        <div class="service-post p-5 text-center h-100 w-100">
+            <div class="feature-icon mb-3">
+                <img src="images/star.png" class="img-fluid" style="width:70px;" alt="">
+            </div>
+            <h3 class="h5">Suivi en temps réel</h3>
+            <p>Restez informé à chaque étape : vous savez exactement où se trouve votre colis.</p>
+        </div>
+    </div>
+
+</div>
+
+  <!-- Articles Section Starts -->
+  <section id="articles">
+    <div id="company" class="container pt-5 my-5">
+      <h1 class="text-center  my-5">Derniers articles</h1>
+      <div class="row g-4 py-5">
+        <div class="feature col-md-4">
+          <div class="artical-post">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center ">
+              <img src="images/embalage.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="artical-content py-5 px-5 ">
+              <h3>Comment bien emballer vos colis fragilesà</h3>
+              <p>Un bon emballage fait toute la différence pour la sécurité de vos envois. Découvrez nos conseils simples pour protéger vos colis fragiles, qu'il s'agisse d'objets en verre ou d'appareils électroniques.</p>
+              <!--<a href="blog-single.html" class="icon-link">Plus d'info </a>-->
+            </div>
+          </div>
+        </div>
+        <div class="feature col-md-4">
+          <div class="artical-post">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center">
+              <img src="images/livraison.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="artical-content py-5 px-5 ">
+              <h3>Livraison express : ce qu'il faut savoir avant de commander</h3>
+              <p>Vous avez besoin d'un colis livré en urgence ? Voici ce qu'il faut vérifier avant de passer commande : délais, zones de couverture, et bonnes pratiques pour éviter les retards.</p>
+              <!--<a href="blog-single.html" class="icon-link">Plus d'info </a>-->
+            </div>
+          </div>
+        </div>
+        <div class="feature col-md-4">
+          <div class="artical-post">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center">
+              <img src="images/ecommerce.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="artical-content py-5 px-5 ">
+              <h3>5 astuces pour optimiser vos livraisons e-commerce</h3>
+              <p>Que vous soyez une petite boutique en ligne ou une entreprise établie, une bonne gestion des livraisons peut transformer l'expérience de vos clients. Voici nos conseils pour gagner en efficacité.  </p>
+              <!--<a href="blog-single.html" class="icon-link">Plus d'info </a>-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <!--<a href="blog.html" class="btn btn-primary first-button my-5">Plus d'Articles</a>-->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Client Section Starts -->
+  <section id="client">
+    <div class="container py-5 my-5" id="featured-3">
+      <h1 class="text-center my-5">Ce que disent nos clients  </h1>
+      <div class="swiper client-Swiper py-5">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="col client-section d-flex align-items-center p-3 ">
+              <img src="images/person1.png" alt="">
+              <div class="client-name ps-4">
+                <h4>Ramen Maggie </h4>
+                <p>Seoul, South Korea</p>
+              </div>
+            </div>
+            <div class="client-description px-3 py-3">
+              <iconify-icon class="client-quote-icon" icon="bxs:quote-alt-left"></iconify-icon>
+              <h5>Un service rapide et fiable</h5>
+              <p>Depuis que je fais appel à Bleoum Service pour mes envois professionnels, je n'ai plus jamais de mauvaise surprise. Les délais sont respectés et le suivi est très clair.</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="col client-section d-flex align-items-center p-3 ">
+              <img src="images/person2.png" alt="">
+              <div class="client-name ps-4">
+                <h4>John D’souza </h4>
+                <p>New York, USA</p>
+              </div>
+            </div>
+            <div class="client-description px-3 py-3">
+              <iconify-icon class="client-quote-icon" icon="bxs:quote-alt-left"></iconify-icon>
+              <h5>Une équipe toujours disponible </h5>
+              <p>J'ai eu un souci avec une livraison et le support client a résolu le problème en moins d'une heure. C'est rare de trouver un tel niveau de réactivité.</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="col client-section d-flex align-items-center p-3 ">
+              <img src="images/person1.png" alt="">
+              <div class="client-name ps-4">
+                <h4>Karl Walter</h4>
+                <p>Munich, German</p>
+              </div>
+            </div>
+            <div class="client-description px-3 py-3">
+              <iconify-icon class="client-quote-icon" icon="bxs:quote-alt-left"></iconify-icon>
+              <h5>Exactement ce qu'il me fallait.</h5>
+              <p>Je gère plusieurs expéditions par semaine pour ma boutique en ligne, et Bleoum Service me fait gagner un temps précieux grâce à leur plateforme simple à utiliser.</p>
+            </div>
+          </div>
+          <!--<div class="swiper-slide">
+            <div class="col client-section d-flex align-items-center p-3 ">
+              <img src="images/person2.png" alt="">
+              <div class="client-name ps-4">
+                <h4>Ramen Maggie </h4>
+                <p>Seoul, South Korea</p>
+              </div>
+            </div>
+            <div class="client-description px-3 py-3">
+              <iconify-icon class="client-quote-icon" icon="bxs:quote-alt-left"></iconify-icon>
+              <h5>Merci pour votre excellent service.</h5>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting Ipsum has been the industry's standard
+                dummy text ever since</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="col client-section d-flex align-items-center p-3 ">
+              <img src="images/person1.png" alt="">
+              <div class="client-name ps-4">
+                <h4>Ramen Maggie </h4>
+                <p>Seoul, South Korea</p>
+              </div>
+            </div>
+            <div class="client-description px-3 py-3">
+              <iconify-icon class="client-quote-icon" icon="bxs:quote-alt-left"></iconify-icon>
+              <h5>Merci pour votre excellent service.</h5>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting Ipsum has been the industry's standard
+                dummy text ever since</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="col client-section d-flex align-items-center p-3 ">
+              <img src="images/person2.png" alt="">
+              <div class="client-name ps-4">
+                <h4>Ramen Maggie </h4>
+                <p>Seoul, South Korea</p>
+              </div>
+            </div>
+            <div class="client-description px-3 py-3">
+              <iconify-icon class="client-quote-icon" icon="bxs:quote-alt-left"></iconify-icon>
+              <h5>Merci pour votre excellent service.</h5>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting Ipsum has been the industry's standard
+                dummy text ever since</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="col client-section d-flex align-items-center p-3 ">
+              <img src="images/person1.png" alt="">
+              <div class="client-name ps-4">
+                <h4>Ramen Maggie </h4>
+                <p>Seoul, South Korea</p>
+              </div>
+            </div>
+            <div class="client-description px-3 py-3">
+              <iconify-icon class="client-quote-icon" icon="bxs:quote-alt-left"></iconify-icon>
+              <h5>Merci pour votre excellent service.</h5>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting Ipsum has been the industry's standard
+                dummy text ever since</p>
+            </div>
+          </div>--> 
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Action Section Starts -->
+  <section id="action">
+    <div id="contact" class="container py-5 my-5">
+
+      <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5 ">
+        <div class="col-md-5 action-column1">
+          <div class="row flex-column py-5 px-5">
+            <div class=" ms-3 mb-5 mt-5 ">
+              <h1 class="mt-2">2043</h1>
+              <h5>Client satisfait</h5>
+            </div>
+
+            <div class=" ms-3 mb-5 ">
+              <h1>3298</h1>
+              <h5>Livraisons réalisées ce mois-ci</h5>
+            </div>
+
+            <div class=" ms-3 mb-5 ">
+              <h1>5 min</h1>
+              <h5 class="mb-2">Temps moyen pour réserver une livraison</h5>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-md-7 action-column2 d-flex flex-column align-items-center py-5 px-5">
+          <h1 class="action-heading text-center mt-5 py-2 px-5 ">Prêt à envoyer votre premier colis avec nous ?</h1>
+          <p class="action-paragraph text-center my-5 px-5 ">Téléchargez l'application en quelques secondes et passez votre première commande dès aujourd'hui. Simple, rapide, sans engagement.</p>
+          <a href="LIEN_PLAY_STORE_ICI" target="_blank" class="btn btn-primary first-button action-button">Obtenir l'application</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section Starts -->
+  <section id="footer">
+    <div class="container footer-container py-5">
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5  ">
+
+        <div class="col-md-3 ">
+          <h4 class="py-3"> Informations de livraison</h4>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-3"><a href="#" class="nav-link footer-1-link p-0 "> Shipping to United States </a>
+            </li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link footer-1-link p-0 "> Shipping to The Netherlands </a>
+            </li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link footer-1-link p-0 "> Shipping to United Kingdom </a>
+            </li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link footer-1-link p-0 "> Shipping to Spain </a></li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link footer-1-link p-0 "> Shipping to Germany </a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 ">
+          <h4 class="py-3"> Centre de ressources</h4>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-3"><a href="#" class="nav-link footer-1-link p-0 "> Logistics Know How </a></li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link footer-1-link p-0 "> Logistics News </a></li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link footer-1-link p-0 "> Local Solutions </a></li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link footer-1-link p-0 "> Logistics Trends & Events </a>
+            </li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link footer-1-link p-0 "> Customer Stories </a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 ">
+          <h4 class="py-3"> Liens utiles</h4>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-3"><a href="#" class="nav-link footer-1-link p-0 "> Contact </a></li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link footer-1-link p-0 "> Services </a></li>
+            <li class="nav-item mb-3"><a href="mention-legale.html" class="nav-link footer-1-link p-0 "> Mentions légales </a></li>
+            <li class="nav-item mb-3"><a href="condition.html" class="nav-link footer-1-link p-0 "> Conditions d'utilisation </a></li>
+            <li class="nav-item mb-3"><a href="politique.html" class="nav-link footer-1-link p-0 ">Politique de confidentialité </a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 ">
+          <h4 class="py-3">Contact</h4>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-3"><a href="#" class="nav-link footer-1-link p-0 "> Company Headquarter </a></li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link footer-1-link p-0 "> United States of America </a>
+            </li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link footer-1-link p-0 "> Ney York 10 </a></li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link footer-1-link p-0 "> 2511 DP Den Haag </a></li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link footer-1-link p-0 "> courier@gmaile.com </a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+
+
+  </section>
+
+  <section class="footer-2">
+    <footer class="container footer-2-container  d-flex align-items-center">
+      <!--<div class="col-md-4 d-flex justify-content-center justify-content-md-start">
+        <p class="footer2-paragraph">© 2023 TemplatesJungle. All rights reserved.</p>
+      </div>-->
+
+      <div class="col-md-4 text-center ">
+        <a href="https://templatesjungle.com/" class="text-decoration-none">
+          <iconify-icon class="footer-2-icon px-2" icon="ri:facebook-fill"></iconify-icon>
+        </a>
+        <a href="https://templatesjungle.com/" class="text-decoration-none">
+          <iconify-icon class="footer-2-icon px-2" icon="ri:twitter-fill"></iconify-icon>
+        </a>
+        <a href="https://templatesjungle.com/" class="text-decoration-none">
+          <iconify-icon class="footer-2-icon px-2" icon="ri:instagram-fill"></iconify-icon>
+        </a>
+      </div>
+
+      <!--<div class="col-md-4">
+        <p class="footer2-paragraph d-flex justify-content-center justify-content-md-end">HTML template by :<a href="https://templatesjungle.com/" class="text-white templatesjungle" target="_blank"> <u> TemplatesJungle
+            </u> </a></p>
+      </div>-->
+    </footer>
+  </section>
+
+
+
+  <!-- Scripts  Starts -->
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/iconify-icon.min.js"></script>
+
+
+</body></html>

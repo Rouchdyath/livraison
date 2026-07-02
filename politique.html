@@ -1,0 +1,416 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>BLEOUM Service - Livraison Rapide </title>
+
+  <link rel="stylesheet" type="text/css" href="css/vendor.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Jost&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <script type="module" src="js/ionicons.esm.js"></script>
+  <script nomodule="" src="js/ionicons.js"></script>
+
+  <!-- script ================================================== -->
+  <script src="js/modernizr.js"></script>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-example2" tabindex="0">
+
+  <!-- Navigation Section Starts -->
+  <section id="navigation-bar" class="navigation position-fixed">
+
+    <nav id="navbar-example2" class="navbar navbar-expand-lg ">
+
+      <div class="navigation container-fluid d-flex flex-wrap align-items-center my-2 pe-4 ps-5 ">
+
+        <div class="col-md-3 brand-logo">
+          <a href="index.html" class="d-inline-flex link-body-emphasis text-decoration-none">
+            <img src="images/logo.png" alt="Bleoum Service" style="height: 110px; width: auto;">
+          </a>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation"><ion-icon name="menu-outline"></ion-icon></button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+
+          <div class="offcanvas-body">
+            <ul class="navbar-nav align-items-center flex-grow-1">
+              <li class="nav-list mx-3">
+                <a href="index.html" class="nav-link active px-2">
+                  <h5> Acceuil </h5>
+                </a>
+              </li>
+              <li class="nav-list mx-3">
+                <a href="index.html#resources" class="nav-link px-2">
+                  <h5> A propos </h5>
+                </a>
+              </li>
+              <li class="nav-list mx-3">
+                <a href="index.html#services" class="nav-link px-2">
+                  <h5> Nos Services </h5>
+                </a>
+              </li>
+              <li class="nav-list mx-3">
+                <a href="index.html#articles" class="nav-link px-2">
+                  <h5> Blog </h5>
+                </a>
+              </li>
+              <li class="nav-list mx-3">
+                <a href="index.html#contact" class="nav-link px-2">
+                  <h5> Contact </h5>
+                </a>
+              </li>
+               
+            <!--<div class="account d-flex align-items-center mt-5 mt-lg-0 justify-content-center justify-content-lg-end">
+              <a href="#" class="nav-link me-5 login" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <h5>Login</h5>
+              </a>
+               Modal
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                   <div class="modal-body">
+                      <div class="tabs-listing">
+                        <nav>
+                          <div class="nav nav-tabs d-flex justify-content-center border-0" id="nav-tab" role="tablist">
+                            <button class="btn btn-outline-primary text-uppercase px-4 py-2 me-4 active" id="nav-sign-in-tab" data-bs-toggle="tab" data-bs-target="#nav-sign-in" type="button" role="tab" aria-controls="nav-sign-in" aria-selected="true">Log
+                              In</button>
+                            <button class="btn btn-outline-primary text-uppercase px-4 py-2" id="nav-register-tab" data-bs-toggle="tab" data-bs-target="#nav-register" type="button" role="tab" aria-controls="nav-register" aria-selected="false">Sign
+                              Up</button>
+                          </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                          <div class="tab-pane fade active show" id="nav-sign-in" role="tabpanel" aria-labelledby="nav-sign-in-tab">
+                            <form id="form1" class="form-group flex-wrap p-3 ">
+                              <div class="form-input col-lg-12 my-4">
+                                <label for="exampleInputEmail1" class="form-label fs-6 text-uppercase fw-bold text-black">Email
+                                  Address</label>
+                                <input type="text" id="exampleInputEmail1" name="email" placeholder="Email" class="form-control ps-3">
+                              </div>
+                              <div class="form-input col-lg-12 my-4">
+                                <label for="inputPassword1" class="form-label  fs-6 text-uppercase fw-bold text-black">Password</label>
+                                <input type="password" id="inputPassword1" placeholder="Password" class="form-control ps-3" aria-describedby="passwordHelpBlock">
+                                <div id="passwordHelpBlock" class="form-text text-center">
+                                  <a href="#" class=" password">Forgot Password ?</a>
+                                </div>
+
+                              </div>
+                              <label class="py-3">
+                                <input type="checkbox" required="" class="d-inline">
+                                <span class="label-body text-black">Remember Me</span>
+                              </label>
+                              <div class="d-grid my-3">
+                                <button class="btn btn-primary btn-lg btn-dark text-uppercase btn-rounded-none fs-6">Log
+                                  In</button>
+                              </div>
+                            </form>
+                          </div>
+                          <div class="tab-pane fade" id="nav-register" role="tabpanel" aria-labelledby="nav-register-tab">
+                            <form id="form2" class="form-group flex-wrap p-3 ">
+                              <div class="form-input col-lg-12 my-4">
+                                <label for="exampleInputEmail2" class="form-label fs-6 text-uppercase fw-bold text-black">Email
+                                  Address</label>
+                                <input type="text" id="exampleInputEmail2" name="email" placeholder="Email" class="form-control ps-3">
+                              </div>
+                              <div class="form-input col-lg-12 my-4">
+                                <label for="inputPassword2" class="form-label  fs-6 text-uppercase fw-bold text-black">Password</label>
+                                <input type="password" id="inputPassword2" placeholder="Password" class="form-control ps-3" aria-describedby="passwordHelpBlock">
+                              </div>
+                              <label class="py-3">
+                                <input type="checkbox" required="" class="d-inline">
+                                <span class="label-body text-black">I agree to the <a href="#" class="text-black password border-bottom">Privacy
+                                    Policy</a>
+                                </span>
+                              </label>
+                              <div class="d-grid my-3">
+                                <button class="btn btn-primary btn-lg btn-dark text-uppercase btn-rounded-none fs-6">Sign
+                                  Up</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="btn btn-primary first-button signup px-4 py-3" data-bs-toggle="modal" data-bs-target="#exampleModal2">Sign up</button>
+               Modal 
+              <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="tabs-listing">
+                        <nav>
+                          <div class="nav nav-tabs d-flex justify-content-center border-0" id="nav-tab2" role="tablist">
+                            <button class="btn btn-outline-primary text-uppercase px-4 py-2 me-4 " id="nav-sign-in-tab2" data-bs-toggle="tab" data-bs-target="#nav-sign-in2" type="button" role="tab" aria-controls="nav-sign-in2" aria-selected="false">Log
+                              In</button>
+                            <button class="btn btn-outline-primary text-uppercase px-4 py-2 active" id="nav-register-tab2" data-bs-toggle="tab" data-bs-target="#nav-register2" type="button" role="tab" aria-controls="nav-register2" aria-selected="true">Sign
+                              Up</button>
+                          </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent1">
+                          <div class="tab-pane fade " id="nav-sign-in2" role="tabpanel" aria-labelledby="nav-sign-in-tab2">
+                            <form id="form3" class="form-group flex-wrap p-3 ">
+                              <div class="form-input col-lg-12 my-4">
+                                <label for="exampleInputEmail3" class="form-label fs-6 text-uppercase fw-bold text-black">Email
+                                  Address</label>
+                                <input type="text" id="exampleInputEmail3" name="email" placeholder="Email" class="form-control ps-3">
+                              </div>
+                              <div class="form-input col-lg-12 my-4">
+                                <label for="inputPassword3" class="form-label  fs-6 text-uppercase fw-bold text-black">Password</label>
+                                <input type="password" id="inputPassword3" placeholder="Password" class="form-control ps-3" aria-describedby="passwordHelpBlock">
+                                <div id="passwordHelpBlock2" class="form-text text-center">
+                                  <a href="#" class=" password">Forgot Password ?</a>
+                                </div>
+
+                              </div>
+                              <label class="py-3">
+                                <input type="checkbox" required="" class="d-inline">
+                                <span class="label-body text-black">Remember Me</span>
+                              </label>
+                              <div class="d-grid my-3">
+                                <button class="btn btn-primary btn-lg btn-dark text-uppercase btn-rounded-none fs-6">Log
+                                  In</button>
+                              </div>
+                            </form>
+                          </div>
+                          <div class="tab-pane fade active show" id="nav-register2" role="tabpanel" aria-labelledby="nav-register-tab2">
+                            <form id="form4" class="form-group flex-wrap p-3 ">
+                              <div class="form-input col-lg-12 my-4">
+                                <label for="exampleInputEmail4" class="form-label fs-6 text-uppercase fw-bold text-black">Email
+                                  Address</label>
+                                <input type="text" id="exampleInputEmail4" name="email" placeholder="Email" class="form-control ps-3">
+                              </div>
+                              <div class="form-input col-lg-12 my-4">
+                                <label for="inputPassword4" class="form-label  fs-6 text-uppercase fw-bold text-black">Password</label>
+                                <input type="password" id="inputPassword4" placeholder="Password" class="form-control ps-3" aria-describedby="passwordHelpBlock">
+                              </div>
+                              <label class="py-3">
+                                <input type="checkbox" required="" class="d-inline">
+                                <span class="label-body text-black">I agree to the <a href="#" class="text-black password border-bottom">Privacy
+                                    Policy</a>
+                                </span>
+                              </label>
+                              <div class="d-grid my-3">
+                                <button class="btn btn-primary btn-lg btn-dark text-uppercase btn-rounded-none fs-6">Sign
+                                  Up</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>-->
+          </div>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <section id="legal-page">
+  <div class="container py-5 my-5">
+    <h1 class="mb-5">Politique de confidentialité</h1>
+
+    <p>Cette Politique de Confidentialité définit la manière dont Inwallets Finance and Technology SARL("Bleoum Service") utilise et protège les informations que nous recueillons lorsque vous utilisez notre site web et bénéficiez de nos services de livraison.
+        En vigueur depuis le 4 mai 2026 
+      Inwallets Finance and Technology SARL
+      Autorisation CNDP N° A-W-353/2017
+    </p>
+
+    <h4 class="py-3">Pourquoi avons-nous besoin de certaines données personnelles ?</h4>
+    <p>
+      Bléoum Service est un service de livraison de colis, courses et documents, accessible via notre site web, permettant à l'utilisateur de demander, suivre et gérer ses livraisons.
+      La collecte de certaines informations personnelles est nécessaire pour vous permettre de bénéficier de nos services dans les meilleures conditions : organiser la prise en charge de vos colis, assurer leur livraison à la bonne adresse, et vous tenir informé de l'avancement de votre commande.
+      Pour accéder à certains services (comme la création d'un compte), l'Utilisateur devra fournir un numéro de téléphone et, le cas échéant, choisir un mot de passe.
+    </p>
+    <h4 class="py-3">Quel type d'informations recueillons-nous ?</h4>
+    <p>Dans le cadre de l'utilisation de nos services, l'Utilisateur peut être amené à renseigner des données personnelles le concernant. Parmi les données à caractère personnel que nous collectons peuvent figurer :
+
+    Ses noms et prénoms
+    Son adresse email
+    Son numéro de téléphone
+    Son adresse de livraison et/ou de domicile
+    Les informations relatives à ses commandes (contenu déclaré, poids, destination)
+    Pour les professionnels : son numéro de registre de commerce et/ou son numéro IFU, si nécessaire à la facturation
+    Notre site peut également inclure des enquêtes facultatives destinées à recueillir votre avis sur votre expérience de livraison.
+  </p>
+
+    <h4 class="py-3">À quoi servent les informations que nous recueillons ?</h4>
+    <p>
+      Les données personnelles collectées sont utilisées exclusivement aux fins suivantes :
+      Traiter et organiser vos demandes de livraison
+      Vous contacter en cas de besoin concernant votre commande (retard, adresse incorrecte, etc.)
+      Gérer votre compte utilisateur, si vous en créez un
+      Vous envoyer des notifications liées au suivi de votre colis
+      Fournir un support client
+      Réaliser des analyses internes pour améliorer la qualité de notre service
+
+    </p>
+
+    <h4 class="py-3">Qui peut accéder aux informations que nous recueillons ?</h4>
+    <p>
+     Bléoum Service s'engage à ne transmettre vos données à caractère personnel à aucun tiers non autorisé. Seules les personnes strictement nécessaires à l'exécution de votre livraison (nos coursiers, notre équipe support) peuvent y avoir accès, dans le cadre de leurs fonctions.
+     Vos données ne sont ni vendues ni louées à des fins commerciales à des tiers.
+
+    </p>
+
+    <h4 class="py-3">  Traitement des données personnelles</h4>
+    <p>
+    Vous vous engagez à fournir des informations exactes concernant vos coordonnées personnelles, ainsi que toute autre information nécessaire à l'accès à nos services, et à mettre à jour ces informations si nécessaire.
+
+    Au Bénin, conformément à la Loi N°2017-20 du 20 avril 2018 portant Code du numérique en République du Bénin, relative à la protection des personnes physiques à l'égard du traitement des données à caractère personnel, vous bénéficiez d'un droit d'accès et de rectification aux informations qui vous concernent, que vous pouvez exercer en vous adressant à conformite@bléoum.me.
+
+    Vous pouvez également, pour des motifs légitimes, vous opposer à ce que les données qui vous concernent fassent l'objet d'un traitement.Ce traitement a été notifié et autorisé par la CNDP au titre du récépissé / autorisation N° A-W-353/2017.
+    </p>
+
+    <h4 class="py-3"> Durées de conservation</h4>
+    <p>
+      Les données à caractère personnel collectées sont conservées pendant une durée n'excédant pas celle nécessaire à la réalisation des finalités pour lesquelles elles ont été collectées.
+      À l'issue de cette durée, vos données sont supprimées de façon définitive.
+    </p>
+
+    <h4 class="py-3">Cookies</h4>
+    <p>Afin de faciliter l'accès à notre appliation  site, nous utilisons des cookies. Les cookies sont de petits fichiers texte que le site envoie à votre navigateur pour enregistrer certaines informations de navigation.
+      Les cookies permettent de naviguer facilement sur notre site et d'en améliorer le fonctionnement. Vous pouvez configurer votre navigateur pour refuser les cookies, bien que cela puisse limiter certaines fonctionnalités du site.
+      À aucun moment ces cookies ne nous permettent d'identifier personnellement l'Utilisateur en dehors du cadre de nos services.
+    </p>
+
+    <h4 class="py-3">Sécurité</h4>
+    <p>
+        Nous prenons les mesures raisonnables pour protéger vos informations personnelles, notamment en limitant l'accès non autorisé à vos données et en les hébergeant sur des serveurs sécurisés.
+        Nous ne pouvons cependant pas garantir l'élimination totale du risque d'usage abusif de vos informations par des tiers malveillants. Vous devez nous contacter immédiatement si vous découvrez une utilisation non autorisée de vos informations.
+    </p>
+
+    <h4 class="py-3">Liens vers des sites tiers</h4>
+    <p>
+      Notre site peut contenir des liens vers d'autres sites. Une fois que vous avez utilisé ces liens pour quitter notre site, nous n'avons plus aucun contrôle sur ces sites tiers et ne pouvons être tenus responsables de la protection de vos données sur ces derniers.
+    </p>
+    <h4 class="py-3"> Contact</h4>
+    <p>Vous pouvez nous contacter pour exercer vos droits d'accès, de rectification et de suppression de vos données personnelles, ou pour toute question concernant cette Politique de Confidentialité.
+      Email : Conformite@bléoum.me
+      Date d'entrée en vigueur : 04 mai 2026
+      Autorisation CNDP : N° A-W-353/2017 
+    </p>
+  </div>
+</section>
+  <!-- Footer Section Starts -->
+  <section id="footer">
+    <div class="container footer-container py-5">
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5  ">
+
+        <div class="col-md-3 ">
+          <h4 class="py-3"> Informations de livraison</h4>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-3"><a href="#" class="nav-link footer-1-link p-0 "> Shipping to United States </a>
+            </li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link footer-1-link p-0 "> Shipping to The Netherlands </a>
+            </li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link footer-1-link p-0 "> Shipping to United Kingdom </a>
+            </li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link footer-1-link p-0 "> Shipping to Spain </a></li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link footer-1-link p-0 "> Shipping to Germany </a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 ">
+          <h4 class="py-3"> Centre de ressources</h4>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-3"><a href="#" class="nav-link footer-1-link p-0 "> Logistics Know How </a></li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link footer-1-link p-0 "> Logistics News </a></li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link footer-1-link p-0 "> Local Solutions </a></li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link footer-1-link p-0 "> Logistics Trends & Events </a>
+            </li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link footer-1-link p-0 "> Customer Stories </a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 ">
+          <h4 class="py-3"> Liens utiles</h4>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-3"><a href="#" class="nav-link footer-1-link p-0 "> Contact </a></li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link footer-1-link p-0 "> Services </a></li>
+            <li class="nav-item mb-3"><a href="mention-legale.html" class="nav-link footer-1-link p-0 "> Mentions légales </a></li>
+            <li class="nav-item mb-3"><a href="condition.html" class="nav-link footer-1-link p-0 "> Conditions d'utilisation </a></li>
+            <li class="nav-item mb-3"><a href="politique.html" class="nav-link footer-1-link p-0 ">Politique de confidentialité </a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 ">
+          <h4 class="py-3">Contact</h4>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-3"><a href="#" class="nav-link footer-1-link p-0 "> Company Headquarter </a></li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link footer-1-link p-0 "> United States of America </a>
+            </li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link footer-1-link p-0 "> Ney York 10 </a></li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link footer-1-link p-0 "> 2511 DP Den Haag </a></li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link footer-1-link p-0 "> courier@gmaile.com </a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+
+
+  </section>
+
+  <section class="footer-2">
+    <footer class="container footer-2-container  d-flex align-items-center">
+      <!--<div class="col-md-4 d-flex justify-content-center justify-content-md-start">
+        <p class="footer2-paragraph">© 2023 TemplatesJungle. All rights reserved.</p>
+      </div>-->
+
+      <div class="col-md-4 text-center ">
+        <a href="https://templatesjungle.com/" class="text-decoration-none">
+          <iconify-icon class="footer-2-icon px-2" icon="ri:facebook-fill"></iconify-icon>
+        </a>
+        <a href="https://templatesjungle.com/" class="text-decoration-none">
+          <iconify-icon class="footer-2-icon px-2" icon="ri:twitter-fill"></iconify-icon>
+        </a>
+        <a href="https://templatesjungle.com/" class="text-decoration-none">
+          <iconify-icon class="footer-2-icon px-2" icon="ri:instagram-fill"></iconify-icon>
+        </a>
+      </div>
+
+      <!--<div class="col-md-4">
+        <p class="footer2-paragraph d-flex justify-content-center justify-content-md-end">HTML template by :<a href="https://templatesjungle.com/" class="text-white templatesjungle" target="_blank"> <u> TemplatesJungle
+            </u> </a></p>
+      </div>-->
+    </footer>
+  </section>
+
+
+
+  <!-- Scripts  Starts -->
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/iconify-icon.min.js"></script>
+
+
+</body></html>
